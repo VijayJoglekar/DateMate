@@ -1,0 +1,116 @@
+.events-header {
+    background: linear-gradient(135deg, #6a1b9a, #d32f2f); /* Same gradient as homepage */
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 36px;
+    font-weight: 600;
+    border-radius: 0 0 30px 30px;
+}
+
+.events-header h1 {
+    margin: 0;
+}
+
+/* Events Section */
+.events-container {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.events-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.events-container li {
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.events-container li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.events-container li strong {
+    color: #FF4081; /* Modern pink color */
+    font-size: 18px;
+}
+
+.events-container li p {
+    color: #555;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* Loading & Error message */
+.events-container p {
+    text-align: center;
+    color: #888;
+    font-size: 18px;
+}
+
+.events-container .error-message {
+    color: #e74c3c; /* Red for error */
+}
+
+/* No events found */
+.events-container .no-events {
+    font-size: 18px;
+    text-align: center;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Button (For the events) */
+.cta-button {
+    background-color: #FF4081; /* Matching homepage button */
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .events-container {
+        padding: 10px;
+    }
+
+    .events-header h1 {
+        font-size: 28px;
+    }
+
+    .events-container li {
+        padding: 10px;
+        margin: 8px 0;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Email</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f1f1f1; /* Light background */
+            color: #333;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            text-align: center;
+            background: linear-gradient(135deg, #6a1b9a, #d32f2f); /* Gradient color scheme */
+            color: white;
+            padding: 30px 20px;
+            border-radius: 12px 12px 0 0;
+            font-size: 26px;
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+        .otp {
+            font-size: 36px;
+            font-weight: bold;
+            color: #fff;
+            background: linear-gradient(135deg, #6a1b9a, #d32f2f);
+            padding: 15px 30px;
+            border-radius: 10px;
+            letter-spacing: 2px;
+            margin: 20px 0;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            color: #777;
+        }
+        .footer a {
+            color: #6a1b9a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+            .email-container {
+                padding: 15px;
+            }
+            .header h1 {
+                font-size: 22px;
+            }
+            .otp {
+                font-size: 30px;
+                padding: 12px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <h1>Welcome to DateMate!</h1>
+        </div>
+        <div class="content">
+            <p>Thank you for signing up with DateMate! To complete your registration, please use the following OTP:</p>
+            <div class="otp">{{ otp }}</div>
+            <p>If you didn’t request this, please ignore this email.</p>
+        </div>
+        <div class="footer">
+            <p>Need help? <a href="mailto:support@datemate.com">Contact Support</a></p>
+            <p>&copy; 2024 DateMate. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

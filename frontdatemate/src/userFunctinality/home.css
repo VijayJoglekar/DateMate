@@ -1,0 +1,77 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+    color: #333;
+}
+.header {
+    background: linear-gradient(135deg, #6a1b9a, #d32f2f); /* Gradient for header */
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 36px;
+    font-weight: 600;
+    border-radius: 0 0 30px 30px;
+}
+.header h1 {
+    margin: 0;
+}
+.hero-section {
+    background: linear-gradient(135deg, #34a853, #8e44ad); /* Hero section gradient */
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+.hero-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.hero-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.cta-button {
+    background-color: #ff4081; /* Modern button color */
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    text-align: center;
+}
+.feature-item {
+    background: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
+    border-radius: 8px;
+    width: 30%;
+}
+.feature-item h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.feature-item p {
+    font-size: 16px;
+    color: #555;
+}
+.footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.footer a {
+    color: #ff4081;
+    text-decoration: none;
+    font-weight: bold;
+}

@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./DateMate_"
+    ],
+    "liveServer.settings.port": 5501
+}

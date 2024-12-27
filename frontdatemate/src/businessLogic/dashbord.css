@@ -1,0 +1,161 @@
+.dash-header{
+    background: linear-gradient(135deg, #6a1b9a, #d32f2f); 
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 0 0 20px 20px;
+}
+
+.dash-maincontainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+.search-bar {
+    width: 30%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+    width: calc(100% - 50px);
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #ff4081; /* New color for button */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #d81b60; /* Darker shade on hover */
+}
+
+/* Search Results */
+.search-results {
+    width: 65%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-results ul {
+    list-style: none;
+    padding: 0;
+}
+
+.search-results li {
+    margin-bottom: 10px;
+}
+
+.search-results p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Add Event Form */
+.add-event-form {
+    width: 65%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-event-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-event-form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.add-event-form input,
+.add-event-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.add-event-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.add-event-form input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.add-event-form button {
+    padding: 10px 20px;
+    background-color: #ff4081; /* Matching color for consistency */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.add-event-form button:hover {
+    background-color: #d81b60; /* Darker shade on hover */
+}
+
+/* Event Status Messages */
+.add-event-form p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.add-event-form p.done {
+    color: green;
+}
+
+.add-event-form p.error {
+    color: red;
+}
+
+/* Action Buttons */
+.action-buttons button {
+    background-color: #ff4081; /* Button color to match theme */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.action-buttons button:hover {
+    background-color: #d81b60; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dash-maincontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar, .add-event-form {
+        width: 100%;
+    }
+}

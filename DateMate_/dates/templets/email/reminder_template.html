@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Reminder</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f1f1f1; /* Light background */
+            color: #333;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            text-align: center;
+            background: linear-gradient(135deg, #6a1b9a, #d32f2f); /* Gradient color scheme */
+            color: white;
+            padding: 30px 20px;
+            border-radius: 12px 12px 0 0;
+            font-size: 26px;
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+        .event-info {
+            background: linear-gradient(135deg, #6a1b9a, #d32f2f);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            display: inline-block;
+            background: #6a1b9a;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            color: #777;
+        }
+        .footer a {
+            color: #6a1b9a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+            .email-container {
+                padding: 15px;
+            }
+            .header {
+                font-size: 22px;
+            }
+            .event-info {
+                font-size: 18px;
+                padding: 12px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <h1>Event Reminder</h1>
+        </div>
+        <div class="content">
+            <p>Hi {{ username }},</p>
+            <p>This is a friendly reminder for your upcoming event:</p>
+            <div class="event-info">{{ event_title }}</div>
+            <p>The event is scheduled for:</p>
+            <div class="event-info">{{ event_date }}</div>
+            <a href="{{ event_link }}" class="button">View Event Details</a>
+            <p>If you have any questions or need assistance, feel free to contact us.</p>
+        </div>
+        <div class="footer">
+            <p>Need help? <a href="mailto:support@datemate.com">Contact Support</a></p>
+            <p>&copy; 2024 DateMate. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
