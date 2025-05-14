@@ -4,6 +4,12 @@ DateMate is a modern dating platform that connects people with shared interests 
 
 ---
 
+## 🎥 Demo Video
+[![DateMate Demo](https://img.youtube.com/vi/YKhqYJsnAVw/0.jpg)](https://youtu.be/YKhqYJsnAVw)  
+*Click the image above to watch the full demo*
+
+---
+
 ## 🚀 Features
 
 - **User Authentication**: Secure login, signup, and profile management.
